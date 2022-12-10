@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Tomatocare</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/icon.png" rel="touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Impact - v1.1.1
+  * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Tomatocare<span>.</span></h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#call-to-action">Tutorial</a></li>
+          <li><a href="#services">Disease</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+    <div class="container position-relative">
+      <div class="row gy-5" data-aos="fade-in">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-center">
+          <h2>Welcome to <span>Tomatocare</span></h2>
+          <p>Masukkan gambar daun tomat untuk diklasifikasi oleh aplikasi Tomatocare.</p>
+          <div><img id="elemImage" src=" "/></div><p></p>
+          <div class="justify-content-center justify-content-lg-start">
+            <div class="btn-input">
+              <label for="inputImage" class="btn">
+              Pilih Gambar
+              </label>
+              <input style="display: none;" type="file" id="inputImage" accept="image/*" onchange="renderImage(this)" />
+            </div>
+            <div class="btn-output">
+              <button class="btn" onclick="predictImage()">Hasil Klasifikasi</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 d-flex flex-column justify-content-center">
+          <img src=" " class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+          <ul id="elemDetail"></ul>
+          <a href="#services" id="elemPrediksi"></a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <h3>SIB x Dicoding Batch 3</h3>
+            <img src="assets/img/initomat.jpg" class="img-fluid rounded-4 mb-4" alt="">
+            <p>Studi Independen Bersertifikat (SIB) Dicoding Cycle 4 merupakan bagian dari program Kampus Merdeka yang bertujuan untuk menghasilkan talenta berstandar tinggi yang sesuai dengan standar Industri. Proses pembelajaran yang dilakukan adalah online learning, dimana peserta harus mengimplementasikan materi yang diperolehnya secara langsung melalui project dan tugas-tugas yang harus diselesaikan untuk menyelesaikan setiap materinya.</p>
+            <p>Dicoding Indonesia merupakan mitra lembaga pelatihan resmi dalam program Studi Independen Bersertifikat untuk menyediakan pelatihan secara daring (online).</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="content ps-0 ps-lg-5">
+              <p>Tanaman tomat merupakan tanaman dari keluarga Solanaceae yang banyak dibudidayakan di Indonesia. Pembudidayaan tanaman tomat seringkali terkendala penyakit yang dapat mempengaruhi produktivitas tanaman tomat menurun. Ada beberapa faktor yang dapat menyebabkan tanaman tomat terkena penyakit, seperti kondisi tanah, kondisi cuaca, jamur, bakteri, dan juga virus.</p> 
+              <p>Website ini diperuntukkan untuk mengklasifikasi dan mengidentifikasi berbagai penyakit pada tanaman tomat berdasarkan visualisasi daun tanaman tomat dan memberikan informasi penyakit tersebut serta memberikan cara mengatasinya. Dengan adanya proyek ini kami harap dapat meningkatkan kualitas dari setiap pertanian tomat yang akan didistribusikan ke pasar - pasar. Proyek ini akan memberikan informasi terkait diagnosa penyakit yang diderita tumbuhan tomat berdasarkan visual daun tomat dan cara mengatasi atau penanggulangannya.</p>
+              <img src="assets/img/initomat1.jpg" class="img-fluid rounded-4 mb-4" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action" class="call-to-action">
+      <div class="container text-center" data-aos="zoom-out">
+        <a href="https://youtu.be/bnF_QR5jjfA" class="glightbox play-btn"></a>
+        <h3>Tutorial Aplikasi</h3>
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <!-- ======= Our Services Section ======= -->
+
+    <section id="services" class="services sections-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Tomato Leaf Disease</h2>
+          <p>Berikut macam-macam penyakit yang ada pada daun tomat.</p>
+        </div>
+
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-flower1"></i>
+              </div>
+              <h3>Bacterial Spot</h3>
+              <p>Penyakit bacterial spot adalah penyakit bercak daun yang diakibatkan oleh bakteri Xanthomonas spp. dan sangat merugikan karena penyakit tersebut menyerang tanaman tomat mulai dari fase bibit hingga dewasa, bahkan penyakit bacterial spot tidak hanya menyerang daun akan tetapi juga menginfeksi akar, buah dan batang.</p>
+              <h5 style="padding-top: 20px;">Cara Mengatasi</h5>
+              <p>Jika penyakit terjadi pada awal musim, pertimbangkan untuk menghancurkan saja seluruh tanaman. Merendam benih selama satu menit dalam 1,3% natrium hipoklorit atau dalam air panas (50° Celcius) selama 25 menit dapat mengurangi timbulnya penyakit.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-flower1"></i>
+              </div>
+              <h3>Early Blight</h3>
+              <p>Penyakit bercak daun alternaria atau penyakit bercak kering disebabkan oleh cendawan Alternaria sp. Patogen ditularkan melalui udara. Gejala awal timbulnya bercak kecil di daun-daun bagian bawah, kemudian berkembang dengan diameter mencapai ± 15 mm. Warna bercak coklat dengan lingkaran-lingkaran sepusat.</p>
+              <h5 style="padding-top: 20px;">Cara Mengatasi</h5>
+              <p>Dapat menggunakan batu kapur alga, campuran susu bebas lemak dan air (1 : 1) atau tepung batu untuk mengobati tanaman yang terinfeksi. Larutan 3 sendok teh soda bikarbonat + emulsi ikan dalam 4 liter air juga membantu.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-flower1"></i>
+              </div>
+              <h3>Late Blight</h3>
+              <p>Late blight atau penyakit busuk daun disebabkan oleh jamur Phytophthora infestans. Biasanya menyerang pada tanaman tomat di dataran tinggi. Gejala serangan pada daun terjadi bercak coklat hingga hitam. Awalnya menyerang ujung dan sisi daun, kemudian meluas ke seluruh permukaan daun hingga ke tangkai daun.</p>
+              <h5 style="padding-top: 20px;">Cara Mengatasi</h5>
+              <p>Tanaman yang terserang penyakit ini harus segera dicabut dan dibakar, jangan di kubur. Gunakan varietas unggul dan bebas jamur. Gunakan semprotan fungisida berbahan dasar mandipropamid, klorotalonil, fluazinam, atau mankozeb untuk melawan penyakit busuk daun.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-flower1"></i>
+              </div>
+              <h3>Leaf Mold</h3>
+              <p>Leaf Mold merupakan penyakit pada tanaman tomat, yang biasanya muncul pada tomat yang dibudidayakan dalam rumah kaca atau lingkungan yang lembab. Jamur Cladosporium fulvum menjadi penyebab muncul nya penyakit ini, dan dapat menyebabkan turunnya kualitas dan hasil pertanian tomat.</p>
+              <h5 style="padding-top: 20px;">Cara Mengatasi</h5>
+              <p>Disarankan melakukan perawatan benih dengan air panas (25 menit) pada 122° Fahrenheit atau 50° Celcius) untuk menghindari patogen pada biji. Jamur Acremonium strictum, Dicyma pulvinata, Trichoderma harzianum atau T. viride dan Trichothecium roseum bersifat antagonis terhadap M. fulva dan dapat digunakan untuk mengurangi penyebarannya.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-flower1"></i>
+              </div>
+              <h3>Septoria Leaf Spot</h3>
+              <p>Penyakit bercak daun septoria merupakan penyakit yang disebabkan oleh serangan jamur Septoria Lycopersici Speg dimana penyakit ini menyerang dan merusak daun tanaman tomat. Gejala penyakit diawali dengan adanya bercak kecil berupa lepuhan berair, kemudian berkembang menjadi bercak melingkar.</p>
+              <h5 style="padding-top: 20px;">Cara Mengatasi</h5>
+              <p>Fungisida berbahan dasar tembaga, seperti campuran Bordeaux, tembaga hidroksida, tembaga sulfat, atau tembaga oksiklorida sulfat dapat membantu mengendalikan patogen. Terapkan pada selang waktu 7 hingga 10 hari sepanjang akhir musim.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-flower1"></i>
+              </div>
+              <h3>Spider Mites/Two Spotted Spider Mite</h3>
+              <p>Spider mite disebabkan oleh tungau laba-laba dari genus Tetranychus, terutama T. urticar dan T. cinnabarinus yang merupakan hama kecil yang menempel di bagian bawah daun tanaman untuk mengisap nutrisi dari daun hingga membuat daun kering dan mati.</p>
+              <h5 style="padding-top: 20px;">Cara Mengatasi</h5>
+              <p>Dalam kasus serangan yang ringan, cukup bersihkan tungau dan buang daun yang terserang. Siapkan olahan bahan yang terdiri dari biji rapa, selasih, kedelai dan minyak nimba untuk menyemprot daun secara menyeluruh dan mengurangi populasi T. urticae.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-flower1"></i>
+              </div>
+              <h3>Target Spot</h3>
+              <p>Target spot atau dikenal sebagai hawar dini adalah penyakit jamur yang sebabkan oleh Corynespora cassiicola yang merupakan organisme pengganggu tanaman (OPT) dari kelompok penyakit dan masuk dalam golongan jamur yang dalam pengendaliannya juga memerlukan keterpaduan.</p>
+              <h5 style="padding-top: 20px;">Cara Mengatasi</h5>
+              <p>Tanaman yang terserang penyakit ini harus segera dicabut dan dibakar, jangan di kubur. Gunakan varietas unggul dan bebas jamur. Gunakan semprotan fungisida berbahan dasar mandipropamid, klorotalonil, fluazinam, atau mankozeb untuk melawan penyakit busuk daun.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-flower1"></i>
+              </div>
+              <h3>Tomato Yellow Leaf Curl Virus</h3>
+              <p>Penyakit yellow leaf curl virus (TYLCV) atau penyakit virus kuning adalah jenis penyakit pada tomat yang disebabkan oleh Geminivirus. Penyakit ini tidak hanya ditularkan melalui biji akan tetapi juga dapat menular dari hasil stek dan serangga vektor kutu kebul.</p>
+              <h5 style="padding-top: 20px;">Cara Mengatasi</h5>
+              <p>Insektisida dari keluarga piretroid yang diterapkan pada tanah basah atau penyemprotan selama tahap pembibitan dapat mengurangi populasi lalat putih. Namun, penggunaannya yang luas dapat mendorong perkembangan resistensi pada populasi kutu kebul.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-flower1"></i>
+              </div>
+              <h3>Tomato Mosaic Virus</h3>
+              <p>Merupakan penyakit mosaic pada tanaman tomat yang disebabkan oleh Tobacco mosaic virus (TMV). Tanaman tomat dengan gejala mosaik memperlihatkan gejala pada daun-daun muda berubah menjadi warna belang kuning hijau, keriting serta berkerut, tanaman kerdil, buah belang dan berwarna kuning.</p>
+              <h5 style="padding-top: 20px;">Cara Mengatasi</h5>
+              <p>Pemanasan kering terhadap biji pada suhu 70° Celcius selama 4 hari atau pada suhu 82-85° Celcius selama 24 jam akan membantu membersihkan virusnya. Atau, biji dapat direndam selama 15 menit dalam larutan 100 g/l trisodium fosfat, dibilas dengan air kemudian dikeringkan.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-flower1"></i>
+              </div>
+              <h3>Powdery Mildew</h3>
+              <p>Powdery Mildew merupakan penyakit tanaman umum dimana memiliki sebaran yang luas. Penyakit ini dapat menyerang tanaman sayuran, tanaman hias, tanaman buah-buahan, dan tanaman lainnya. Powdery Mildew pada tanaman tomat disebabkan oleh cendawan Oidium neolycopersici.</p> 
+              <h5 style="padding-top: 20px;">Cara Mengatasi</h5>
+              <p>Untuk perkebunan, larutan susu tampaknya bekerja sebagai fungisida alami. Aplikasikan larutan ini pada daun setiap hari kedua. Jenis embun tepung berbeda tergantung pada inangnya, larutan ini mungkin tidak efektif untuk semua jenis.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Our Services Section -->
+
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Team</h2>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/ija.jpg" class="img-fluid" alt="">
+              <h4>Andi Fadgham Izza Rizky</h4>
+              <span>M128X0207</span>
+              <div class="social">
+                <a href="https://www.instagram.com/izzafirrrrr/"><i class="bi bi-instagram"></i></a>
+                <a href="https://github.com/"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/andifadgham/"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <img src="assets/img/team/febby.jpg" class="img-fluid" alt="">
+              <h4>Febby Ariyanti Herdiana</h4>
+              <span>M193Y0376</span>
+              <div class="social">
+                <a href="https://www.instagram.com/fexxarynt/"><i class="bi bi-instagram"></i></a>
+                <a href="https://github.com/febbyarynt"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/febbyarynt/"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <img src="assets/img/team/adit_close_up.jpg" class="img-fluid" alt="">
+              <h4>Aditya Yoga Adhiputra</h4>
+              <span>M295X0712</span>
+              <div class="social">
+                <a href="https://www.instagram.com/adityayogaadhip/"><i class="bi bi-instagram"></i></a>
+                <a href="https://github.com/Adhiputraa"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/aditya-yoga-a-8316a1129/"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <img src="assets/img/team/dhaifan.jpg" class="img-fluid" alt="">
+              <h4>Dhaifan Satriaji</h4>
+              <span>M128X0209</span>
+              <div class="social">
+                <a href="https://www.instagram.com/dhaifan25/"><i class="bi bi-instagram"></i></a>
+                <a href="https://github.com/dhaifan999"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/dhaifans/"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- JS File --> <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>
